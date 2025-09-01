@@ -27,6 +27,9 @@ public class BrowserCommands {
 		
 		String page_source = driver.getPageSource();//to get the page source
 		System.out.println(page_source);// to print page source
+		
+		String handleid = driver.getWindowHandle();
+		System.out.println(handleid);//returns a uniques string value which is the ID value of current window
 	}
 
 	public static void main(String[] args) {
